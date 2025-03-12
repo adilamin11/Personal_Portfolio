@@ -1,0 +1,79 @@
+import React from "react";
+import Title from "../layouts/Title";
+import {
+  bookstore,
+  notesave,
+  players,
+  tic,
+  resturant,
+  todo,
+  
+  
+} from "../../assets/index";
+import ProjectsCard from "./ProjectsCard";
+
+const Projects = () => {
+  return (
+    <section
+      id="projects"
+      className="w-full py-20 border-b-[1px] border-b-black"
+    >
+      <div className="flex justify-center items-center text-center">
+        <Title
+          title="VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK"
+          des="My Projects"
+        />
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-14">
+        <ProjectsCard
+          title="Book Store using Mern"
+          des="A bookstore application to browse, purchase, and manage books seamlessly. Built with React, Node.js, and MongoDB for an efficient and user-friendly shopping experience."  
+
+          src={bookstore}
+          github="https://github.com/adilamin11/bookstore"
+          live="https://adils-bookstore.netlify.app/"
+        />
+        <ProjectsCard
+          title="Note Saver App"
+          des="An interactive app for saving and managing notes efficiently. Developed using React, Express.js, and MongoDB for seamless note-taking, organization, and retrieval."  
+
+          src={notesave}
+          github="https://github.com/adilamin11/Note_saver_app"
+          live="https://note-saver-app-two.vercel.app/"
+        />
+        <ProjectsCard
+          title="Players_Platform"
+          des="A platform to connect, manage, and showcase player profiles. Features include user authentication and dynamic player listings, built using React for an interactive and seamless experience."  
+
+          src={players}
+          github="https://github.com/adilamin11/Players_platform"
+          live="https://players-platform-selection.netlify.app/"
+        />
+          <ProjectsCard
+            title=" E-commerce"
+            des="A restaurant website with a user-friendly interface, allowing customers to explore a diverse menu with detailed descriptions and high-quality images. Built using React.
+"
+            src={resturant}
+            github="https://github.com/adilamin11/Basic_Resturan_recat_js"
+            live="https://basic-resturant-website.netlify.app/"
+          />
+        <ProjectsCard
+          title="Tic-Toc-Toe"
+          des="A classic Tic-Tac-Toe game with features to start, update, and reset matches. Includes real-time updates for instant gameplay changes and local storage support to save game progress using HTML, CSS, and JavaScript."
+          src={tic}
+          github="https://github.com/adilamin11/Tic_Toc_Toe"
+          live="https://tic-toc-toe-adil.netlify.app/"
+        />
+        <ProjectsCard
+          title="Todo_App"
+          des="A multi-feature application with functionalities like user authentication, task categorization, note-taking, and reminders. Designed using React and optimized for performance."
+          src={todo}
+          github="https://github.com/adilamin11/ToDo-List"
+          live="https://adilamin11.github.io/ToDo-List/"
+        />
+      </div>
+    </section>
+  );
+};
+
+export default Projects;
