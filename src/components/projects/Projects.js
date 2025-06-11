@@ -5,7 +5,7 @@ import {
   notesave,
   players,
   tic,
-  resturant,
+  Reactlandingpage.
   todo,
   
   
@@ -50,11 +50,11 @@ const Projects = () => {
           live="https://players-platform-selection.netlify.app/"
         />
           <ProjectsCard
-            title=" E-commerce"
-            des="A restaurant website with a user-friendly interface, allowing customers to explore a diverse menu with detailed descriptions and high-quality images. Built using React.
+            title=" React-Landing-Page"
+            des="A sleek and responsive restaurant landing page built with React, featuring a dynamic menu, high-quality images, and smooth user navigation for an engaging browsing experience".
 "
-            src={resturant}
-            github="https://github.com/adilamin11/Basic_Resturan_recat_js"
+            src={Reactlandingpage}
+            github="https://github.com/adilamin11/React-Landing-Page"
             live="https://basic-resturant-website.netlify.app/"
           />
         <ProjectsCard
